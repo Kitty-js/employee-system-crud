@@ -1,0 +1,45 @@
+{% include 'header.html' %}
+
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div class="alert alert-danger alert-dismissible fade show" role="alert"">
+            {% for message in messages %}
+                {{ message }}
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endwith %}
+
+<form method="post" action="/store" enctype="multipart/form-data">
+    <div class="card">
+        <div class="card-header">
+            Add employee
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Employee Data</h5>
+            <p class="card-text">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input id="name" class="form-control" type="text" name="name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input id="email" class="form-control" type="email" name="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="photo">Photo:</label>
+                    <input id="photo" class="form-control" type="file" name="photo">
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="add" class="btn btn-success">
+                </div>
+
+            </p>
+        </div>
+    </div>
+</form>
+{% include 'footer.html' %}

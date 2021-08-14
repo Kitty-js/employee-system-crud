@@ -1,0 +1,10 @@
+# Visual Studio Code Settings
+.vscode
+
+# MySQL
+.env
+
+# Images
+uploads
+
+image
