@@ -19,6 +19,10 @@ In the images shown above, you can see an "edit" and a "delete"; as the name say
 
 Once the session is closed you can not access the home page, you can not delete or edit, or through the url you can not, if you try to enter for example "/edit/17" automatically redirects you to "/login" to log in or register.  Nor can you delete it, if you try to access for example "/delete/17" you will not be able to because it will redirect you to the "/login" page or if you do not have any account you can register in "/register".
 
+On the page where the user can register, if data is not entered in all the fields "Name, Password, Email" or a field is left blank, for example "Name: test" "Password: test" "Email: ", an error will be thrown and you will be made to fill in the form correctly.
+
+![alt text](https://i.imgur.com/2JLnviV.png)
+
 # ~ End ~
 
 I may not have explained the application, login and CRUD in general very well or in depth, but I have tried to do my best, and sorry if the code looks too verbose, when I have free time I will take it apart and improve it little by little. I have several codes that I haven't uploaded because some I use for work and I can't publish them, (Others I don't upload because they are mostly pretty simple CRUD that I made in languages like php, java, python and JavaScript mostly.) but I will try to publish the codes of the applications that I make in my free time (Like this one). Possibly I will upload the others, although I don't know haha, I'll see what I do.
